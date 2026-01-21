@@ -4,7 +4,7 @@
 
 ## 1. 环境准备
 
-- **Python 环境**：建议使用虚拟环境 `D:\code\Python\Findwork\.venv`
+- **Python 环境**：建议使用虚拟环境（如 `.venv`）
 - **浏览器**：需安装 **Microsoft Edge**
 - **依赖库**：`playwright`, `asyncio`
 
@@ -17,7 +17,7 @@
 由于教务系统有登录保护，您需要手动从浏览器获取登录后的网址和 Cookie 信息：
 
 1. **登录系统**：使用 Edge 浏览器打开教务系统，点击进入“学生成绩查询”页面。
-2. **确认网址**：请确保您当前页面的网址与[截图](file:///d:/code/Python/exam_spider/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-01-20%20003255.png)中顶部的地址栏一致（通常为 `https://jwglxt.gpnu.edu.cn/jwglxt/cjcx/cjcx_cxDgXscj.html?gnmkdm=N305005&layout=default`）。
+2. **确认网址**：请确保您当前页面的网址与顶部的地址栏一致（通常为 `https://jwglxt.gpnu.edu.cn/jwglxt/cjcx/cjcx_cxDgXscj.html?gnmkdm=N305005&layout=default`）。
    - **将该网址完整复制**，填写到 `config.json` 的 `"url"` 字段中。
      网址是成绩查询界面的网址
 3. **打开开发者工具**：按下键盘上的 **F12** 键（或在页面点击右键选择“检查”）。
@@ -72,10 +72,10 @@
 
 ## 3. 运行脚本
 
-使用指定虚拟环境运行：
+使用虚拟环境运行：
 
 ```powershell
-D:\code\Python\Findwork\.venv\Scripts\python.exe spider.py
+python spider.py
 ```
 
 ## 4. 功能逻辑
